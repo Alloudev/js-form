@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <div class="form_wrapper">
+      <form action="">
+        <div id="name_error_div">
+          <label for="name">Name</label>
+          <span id="name_error"></span>
+        </div>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="John Doe"
+          required
+        />
+
+        <div class="minchars">
+          <span id="mincharstexte">Characters:</span>
+          <span id="mincharsvalue">8</span>
+        </div>
+        <div id="mail_error_div">
+          <label for="email">Email</label>
+          <span id="mail_error"></span>
+        </div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="johndoe@mail.com"
+          required
+        />
+        <div id="password_error_div">
+          <label for="password">Password</label>
+          <span id="password_error"></span>
+        </div>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="12345.@"
+          required
+        />
+        <button id="submit_btn">Submit</button>
+        <div id="success_div">
+          <p id="success">Formulaire envoyé !</p>
+        </div>
+      </form>
+    </div>
+    <div id="after_success">
+      <p id="after_success_title">Other projects by me :</p>
+      <div id="projects">
+        <a href="https://github.com/Alloudev/AO-chifoumi">
+          <div>
+            <img
+              src="./assets/images/hand-scissors-svgrepo-com.svg"
+              alt="Image d'une main faisant le signe ciseaux"
+            />
+            <h2>Chifoumi</h2>
+          </div>
+        </a>
+        <a href="https://github.com/Alloudev/AO-PlusOuMoins">
+          <div>
+            <img
+              src="./assets/images/plusoumoins.png"
+              alt="Logo du jeu Plus ou Moins"
+            />
+            <h2>Plus ou moins</h2>
+          </div>
+        </a>
+        <a href="https://github.com/Alloudev/AO-diceGame">
+          <div>
+            <img src="./assets/images/dice.png" alt="Image d'un dés 6" />
+            <h2>Le 100</h2>
+          </div>
+        </a>
+      </div>
+      <button id="return_to_form">Retourner au formulaire</button>
+    </div>
+    <button id="themeToggle">🌙 / ☀️</button>
+    <script src="./js/form.js"></script>
+  </body>
+</html>
